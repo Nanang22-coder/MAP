@@ -1,0 +1,38 @@
+var angka = [2,4,1,7,3,2,6]
+
+var nama = ["kusina","narto","kiroi","aa"]
+
+var oangka = [
+
+  {name:"naruto", age: 2},
+
+  {name:"agus" ,age: 17},
+
+  {name:"palupi", age:14}
+
+  ]
+
+  console.log(angka.sort())
+
+  console.log(nama.sort())
+
+  
+
+ //mengurutkan obyek angka dari age
+
+var d = oangka.sort(function(a,b) {
+
+  return a.age - b.age
+
+})
+
+//mengurutkan obyek angka dari string name
+
+var c = oangka.sort(function(a,b){
+
+  return a.name.localeCompare(b.name)
+
+})
+
+console.log(d, c)
+
